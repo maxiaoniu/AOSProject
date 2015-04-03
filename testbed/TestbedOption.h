@@ -23,7 +23,8 @@ public:
     int m_tokenHolder;
     std::vector<int> m_nodeIDList;
     //system parameters
-    std::map<int,std::string> m_nodeIDmapIP;
+    std::map<int,uint32_t> m_nodeIDmapIP;
+    std::map<uint32_t,int> m_IPmapNodeID;
     int m_ctlPort;
     int m_nodePort;
     
@@ -35,6 +36,7 @@ private:
     std::string m_tbParaFileName;
     bool parseSystemPara();
     bool parseTestbedPara();
+    uint32_t getIPfromHost(const std::string &host);
     std::vector<int> splitString(const std::string &s, const std::string &seperator);
     
 

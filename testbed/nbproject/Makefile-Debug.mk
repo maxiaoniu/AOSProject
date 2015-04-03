@@ -36,7 +36,12 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/CMPWEpoll.o \
+	${OBJECTDIR}/CMPWListenHandle.o \
+	${OBJECTDIR}/CMPWNode.o \
+	${OBJECTDIR}/CMPWReactor.o \
 	${OBJECTDIR}/CMPWSocket.o \
+	${OBJECTDIR}/CMPWSocketIOHandle.o \
+	${OBJECTDIR}/CMPWUtils.o \
 	${OBJECTDIR}/TestbedOption.o \
 	${OBJECTDIR}/main.o
 
@@ -70,10 +75,35 @@ ${OBJECTDIR}/CMPWEpoll.o: CMPWEpoll.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CMPWEpoll.o CMPWEpoll.cpp
 
+${OBJECTDIR}/CMPWListenHandle.o: CMPWListenHandle.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CMPWListenHandle.o CMPWListenHandle.cpp
+
+${OBJECTDIR}/CMPWNode.o: CMPWNode.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CMPWNode.o CMPWNode.cpp
+
+${OBJECTDIR}/CMPWReactor.o: CMPWReactor.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CMPWReactor.o CMPWReactor.cpp
+
 ${OBJECTDIR}/CMPWSocket.o: CMPWSocket.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CMPWSocket.o CMPWSocket.cpp
+
+${OBJECTDIR}/CMPWSocketIOHandle.o: CMPWSocketIOHandle.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CMPWSocketIOHandle.o CMPWSocketIOHandle.cpp
+
+${OBJECTDIR}/CMPWUtils.o: CMPWUtils.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CMPWUtils.o CMPWUtils.cpp
 
 ${OBJECTDIR}/TestbedOption.o: TestbedOption.cpp 
 	${MKDIR} -p ${OBJECTDIR}

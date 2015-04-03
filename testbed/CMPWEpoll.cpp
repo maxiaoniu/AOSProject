@@ -5,7 +5,6 @@
  * Created on March 29, 2015, 8:01 PM
  */
 
-#include "CMPWEpoll.h"
 #include<vector>
 #include<string.h>
 #include<sys/types.h>
@@ -13,71 +12,70 @@
 #include<unistd.h>
 #include<stdio.h>
 #include<iostream>
+#include <errno.h>
+#include "CMPWEpoll.h"
+#include "CMPWEvent.h"
 
-CMPWEpoll::CMPWEpoll(const int socket) {
-    epollCreate(socket);
+CMPWEpoll::CMPWEpoll():m_fdCount(0) {
+    m_epollFd = epoll_create(1024);
 }
 
 CMPWEpoll::~CMPWEpoll() {
+    close(m_epollFd);    
 }
 
-int CMPWEpoll::epollCreate(const int socket) {
-    if(-1 == (m_epollFd = epoll_create(1024)))
+int CMPWEpoll::regEvent(Handle handle, Event evt) {
+    struct epoll_event ev;
+    ev.data.fd = handle;
+    
+    ev.events = evt;
+    if ( 0 != epoll_ctl( m_epollFd, EPOLL_CTL_ADD, handle, &ev ) )
     {
-            return -1;
+        if ( errno == ENOENT ) 
+        {
+            if ( 0 != epoll_ctl( m_epollFd, EPOLL_CTL_ADD, handle, &ev ) )
+            {
+                std::cerr << "epoll_ctl error:" << strerror(errno) << std::endl;
+                return -errno;
+            }
+            ++m_fdCount;
+        }
     }
-    m_socketFd = socket;
+    else
+        ++m_fdCount;
     return 0;
 }
 
-int CMPWEpoll::addToEpoll(const int socket)
-{
-    memset(&m_epollEvent, 0, sizeof(m_epollEvent));
+int CMPWEpoll::waitEvent(std::map<Handle, CMPWEventHandle*> &handlers, int timeout) {
+    std::vector<struct epoll_event> evs(m_fdCount);
+    int num = epoll_wait(m_epollFd, &evs[0], m_fdCount, timeout);
+    if (num > 0) {
+        for (int i = 0; i < num; ++i) {
+            Handle handle = evs[i].data.fd;
 
-    m_epollEvent.events = EPOLLIN;
-    m_epollEvent.data.fd = socket;
+            if (EPOLLIN == evs[i].events) {
+                handlers[ handle ]->readHandle();
+            }
+            if (EPOLLOUT == evs[i].events) {
+                handlers[ handle ]->writeHandle();
+            }
 
-    if(-1 == epoll_ctl(m_epollFd, EPOLL_CTL_ADD, socket, &m_epollEvent))
-    {
-            return -1;
+        }
+    } else if (num < 0) {
+        std::cerr << "epoll_wait error:" << strerror(errno) << std::endl;
     }
-    return 0;
+
+    return num;
 }
 
-int CMPWEpoll::isListenEpoll(const int socket)
-{
+int CMPWEpoll::removeEvent(Handle handle) {
+    struct epoll_event ev;
 
-    std::vector<int> vecListen;
-    memset(&m_returnEpollEvents, 0, sizeof(m_returnEpollEvents));
-
-    int readNum = epoll_wait(m_epollFd, m_returnEpollEvents, 1024, -1);
-    std::cout << readNum << std::endl;
-
-    for(int i = 0;i != readNum;++i)
-    {
-            if(m_returnEpollEvents[i].events & EPOLLIN && m_returnEpollEvents[i].data.fd == socket)
-            {
-                    int cliAccept = accept(m_returnEpollEvents[i].data.fd, NULL, NULL);
-                    std::cout << "a new client online" << std::endl;
-                    memset(&m_epollEvent, 0, sizeof(m_epollEvent));
-
-                    m_epollEvent.events = EPOLLIN;
-                    m_epollEvent.data.fd = cliAccept;
-
-                    if(-1 == epoll_ctl(m_epollFd, EPOLL_CTL_ADD, cliAccept, &m_epollEvent))
-                    {
-                            return -1;
-                    }
-
-                    return cliAccept;
-            }
-            else if(m_returnEpollEvents[i].events & EPOLLIN)
-            {
-            //	epoll_ctl(_epollFd, EPOLL_CTL_DEL, _returnEpollEvents[i].data.fd, NULL);
-
-
-                    return m_returnEpollEvents[i].data.fd;
-            }
-
+    if (0 != epoll_ctl(m_epollFd, EPOLL_CTL_DEL, handle, &ev)) {
+        std::cerr << "epoll_del error:" << strerror(errno) << std::endl;
+        return -1;
     }
+
+    --m_fdCount;
+    return 0;
 }

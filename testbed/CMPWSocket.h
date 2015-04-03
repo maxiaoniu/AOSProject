@@ -23,20 +23,18 @@
 #include <sys/ioctl.h>
 #include <stdarg.h>
 #include <fcntl.h>
-#include <fcntl.h>
 
 class CMPWSocket {
 public:
     CMPWSocket();
     virtual ~CMPWSocket();
     int tcpServer(int port);
-    //int socketAccept(int listen_fd, struct sockaddr *cliaddr, socklen_t *clilen);
+    int socketAccept(struct sockaddr *cliaddr, socklen_t *clilen);
     int m_listen_fd;
     int m_client_fd;
 private:
 
-    int m_connect_fd;
-    
+    int m_connect_fd;    
     int socketCreate(int domain);
     int socketListen(int s, struct sockaddr *sa, socklen_t len);
     

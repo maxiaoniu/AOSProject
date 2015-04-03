@@ -7,24 +7,21 @@
 
 #ifndef CMPWEPOLL_H
 #define	CMPWEPOLL_H
-
-#include<sys/epoll.h>
+#include <map>
+#include <sys/epoll.h>
+#include "CMPWEvent.h"
+#include "CMPWEventHandle.h"
 class CMPWEpoll {
 public:
-    CMPWEpoll(const int socket);
+    CMPWEpoll();
     ~CMPWEpoll();
     
-    int addToEpoll(const int);
-    int removeFromEpoll();
-    int isListenEpoll(const int);
+    int waitEvent(std::map<Handle, CMPWEventHandle *> & handlers, int timeout = -1) ;
+    int regEvent(Handle handle, Event evt) ;
+    int removeEvent(Handle handle) ;
 private:
     int m_epollFd;
-    int m_socketFd;
-    struct epoll_event m_epollEvent;
-    struct epoll_event m_returnEpollEvents[1024];
-
-    int epollCreate(const int socket);
-
+    int m_fdCount;
 };
 
 #endif	/* CMPWEPOLL_H */

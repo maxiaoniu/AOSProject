@@ -7,6 +7,10 @@
 
 #include "TestbedOption.h"
 #include <iostream>
+#include<sys/socket.h>
+#include<errno.h> //For errno - the error number
+#include<netdb.h> //hostent
+#include<arpa/inet.h>
 typedef INI<std::string, std::string, std::string> ini_t;
 
 TestbedOption::TestbedOption(const std::string &sysParaFileName,const std::string &tbParaFileName) {
@@ -30,8 +34,8 @@ void TestbedOption::printConfiguration()
     std::cout << "We have " << m_nodesNumber << " nodes: " << std::endl;
     for (std::vector<int>::iterator it = m_nodeIDList.begin() ; it != m_nodeIDList.end(); ++it)
     {
-        std::cout << *it << "--";
-        std::cout << m_nodeIDmapIP.find(*it)->second<< std::endl;
+        std::cout<<"node"<< *it << " ";
+        //std::cout << m_nodeIDmapIP.find(*it)->second<< std::endl;
     }
     std::cout << std::endl;
     
@@ -61,6 +65,7 @@ bool TestbedOption::parseTestbedPara() {
 }
 
 bool TestbedOption::parseSystemPara() {
+    uint32_t ip;
     ini_t ini(m_sysParaFileName, false);
     if (!ini.parse()) {
         std::cout << "Error: Can't open system configuration file: " + m_sysParaFileName;
@@ -69,7 +74,12 @@ bool TestbedOption::parseSystemPara() {
     //create the node index to IP map
     ini.select("address");
     for (ini_t::keysit_t i = ini.current->begin(); i != ini.current->end(); i++) {
-        m_nodeIDmapIP.insert(std::pair<int, std::string>(Converters::Convert<int>(i->first), i->second));
+        ip = getIPfromHost((std::string &)(i->second));
+        if(ip<0)
+            return false;
+       
+        m_nodeIDmapIP.insert(std::pair<int, uint32_t>(Converters::Convert<int>(i->first), ip));
+        m_IPmapNodeID.insert(std::pair<uint32_t, int>(ip, Converters::Convert<int>(i->first)));
     }
     
     //parse the port
@@ -101,4 +111,29 @@ std::vector<int> TestbedOption::splitString(const std::string &s, const std::str
     }
     return result;
     
+}
+
+uint32_t TestbedOption::getIPfromHost(const std::string &host) {
+        struct addrinfo hint;
+        struct addrinfo *answer;
+
+        memset(&hint, 0, sizeof(hint));
+        hint.ai_family = AF_INET;
+        hint.ai_socktype = SOCK_STREAM;
+
+        int ret = getaddrinfo(host.c_str(), NULL, &hint, &answer);
+        if(ret != 0)
+        {
+            std::cerr << "getaddrinfo error" << strerror(errno);
+            return uint32_t(-1);
+        }
+
+        //we only use first find addr
+        for(struct addrinfo* cur = answer; cur != NULL; cur = cur->ai_next)
+        {
+            return ((struct sockaddr_in*)(cur->ai_addr))->sin_addr.s_addr;
+        }
+
+        std::cerr<<"getHostByName Error";
+        return uint32_t(-1);
 }

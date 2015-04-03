@@ -5,20 +5,34 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>CMPWEpoll.h</itemPath>
+      <itemPath>CMPWEvent.h</itemPath>
+      <itemPath>CMPWEventHandle.h</itemPath>
+      <itemPath>CMPWListenHandle.h</itemPath>
+      <itemPath>CMPWNode.h</itemPath>
+      <itemPath>CMPWPacket.h</itemPath>
+      <itemPath>CMPWReactor.h</itemPath>
       <itemPath>CMPWSocket.h</itemPath>
+      <itemPath>CMPWSocketIOHandle.h</itemPath>
+      <itemPath>CMPWUtils.h</itemPath>
       <itemPath>INI.h</itemPath>
       <itemPath>TestbedOption.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
+      <itemPath>system.ini</itemPath>
       <itemPath>testbed.ini</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>CMPWEpoll.cpp</itemPath>
+      <itemPath>CMPWListenHandle.cpp</itemPath>
+      <itemPath>CMPWNode.cpp</itemPath>
+      <itemPath>CMPWReactor.cpp</itemPath>
       <itemPath>CMPWSocket.cpp</itemPath>
+      <itemPath>CMPWSocketIOHandle.cpp</itemPath>
+      <itemPath>CMPWUtils.cpp</itemPath>
       <itemPath>TestbedOption.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
@@ -48,9 +62,35 @@
       </item>
       <item path="CMPWEpoll.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="CMPWEvent.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CMPWEventHandle.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CMPWListenHandle.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CMPWListenHandle.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CMPWNode.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CMPWNode.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CMPWPacket.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CMPWReactor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CMPWReactor.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="CMPWSocket.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="CMPWSocket.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CMPWSocketIOHandle.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CMPWSocketIOHandle.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CMPWUtils.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CMPWUtils.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="INI.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -59,6 +99,8 @@
       <item path="TestbedOption.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="system.ini" ex="false" tool="3" flavor2="0">
       </item>
       <item path="testbed.ini" ex="false" tool="3" flavor2="0">
       </item>
@@ -87,9 +129,35 @@
       </item>
       <item path="CMPWEpoll.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="CMPWEvent.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CMPWEventHandle.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CMPWListenHandle.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CMPWListenHandle.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CMPWNode.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CMPWNode.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CMPWPacket.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CMPWReactor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CMPWReactor.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="CMPWSocket.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="CMPWSocket.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CMPWSocketIOHandle.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CMPWSocketIOHandle.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CMPWUtils.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CMPWUtils.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="INI.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -98,6 +166,8 @@
       <item path="TestbedOption.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="system.ini" ex="false" tool="3" flavor2="0">
       </item>
       <item path="testbed.ini" ex="false" tool="3" flavor2="0">
       </item>
