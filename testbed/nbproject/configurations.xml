@@ -4,6 +4,7 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>CMPWCommand.h</itemPath>
       <itemPath>CMPWEpoll.h</itemPath>
       <itemPath>CMPWEvent.h</itemPath>
       <itemPath>CMPWEventHandle.h</itemPath>
@@ -13,6 +14,8 @@
       <itemPath>CMPWReactor.h</itemPath>
       <itemPath>CMPWSocket.h</itemPath>
       <itemPath>CMPWSocketIOHandle.h</itemPath>
+      <itemPath>CMPWTimer.h</itemPath>
+      <itemPath>CMPWTimerHandle.h</itemPath>
       <itemPath>CMPWUtils.h</itemPath>
       <itemPath>INI.h</itemPath>
       <itemPath>TestbedOption.h</itemPath>
@@ -32,6 +35,8 @@
       <itemPath>CMPWReactor.cpp</itemPath>
       <itemPath>CMPWSocket.cpp</itemPath>
       <itemPath>CMPWSocketIOHandle.cpp</itemPath>
+      <itemPath>CMPWTimer.cpp</itemPath>
+      <itemPath>CMPWTimerHandle.cpp</itemPath>
       <itemPath>CMPWUtils.cpp</itemPath>
       <itemPath>TestbedOption.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
@@ -57,7 +62,12 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
+        <ccTool>
+          <commandLine>-lrt</commandLine>
+        </ccTool>
       </compileType>
+      <item path="CMPWCommand.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="CMPWEpoll.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="CMPWEpoll.h" ex="false" tool="3" flavor2="0">
@@ -87,6 +97,14 @@
       <item path="CMPWSocketIOHandle.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="CMPWSocketIOHandle.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CMPWTimer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CMPWTimer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CMPWTimerHandle.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CMPWTimerHandle.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="CMPWUtils.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -117,6 +135,7 @@
         </cTool>
         <ccTool>
           <developmentMode>5</developmentMode>
+          <commandLine>-lrt</commandLine>
         </ccTool>
         <fortranCompilerTool>
           <developmentMode>5</developmentMode>
@@ -124,7 +143,12 @@
         <asmTool>
           <developmentMode>5</developmentMode>
         </asmTool>
+        <linkerTool>
+          <additionalDep>-lrt</additionalDep>
+        </linkerTool>
       </compileType>
+      <item path="CMPWCommand.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="CMPWEpoll.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="CMPWEpoll.h" ex="false" tool="3" flavor2="0">
@@ -154,6 +178,14 @@
       <item path="CMPWSocketIOHandle.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="CMPWSocketIOHandle.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CMPWTimer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CMPWTimer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CMPWTimerHandle.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CMPWTimerHandle.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="CMPWUtils.cpp" ex="false" tool="1" flavor2="0">
       </item>

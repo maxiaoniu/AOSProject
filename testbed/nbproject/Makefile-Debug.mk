@@ -41,6 +41,8 @@ OBJECTFILES= \
 	${OBJECTDIR}/CMPWReactor.o \
 	${OBJECTDIR}/CMPWSocket.o \
 	${OBJECTDIR}/CMPWSocketIOHandle.o \
+	${OBJECTDIR}/CMPWTimer.o \
+	${OBJECTDIR}/CMPWTimerHandle.o \
 	${OBJECTDIR}/CMPWUtils.o \
 	${OBJECTDIR}/TestbedOption.o \
 	${OBJECTDIR}/main.o
@@ -50,8 +52,8 @@ OBJECTFILES= \
 CFLAGS=
 
 # CC Compiler Flags
-CCFLAGS=
-CXXFLAGS=
+CCFLAGS=-lrt
+CXXFLAGS=-lrt
 
 # Fortran Compiler Flags
 FFLAGS=
@@ -99,6 +101,16 @@ ${OBJECTDIR}/CMPWSocketIOHandle.o: CMPWSocketIOHandle.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CMPWSocketIOHandle.o CMPWSocketIOHandle.cpp
+
+${OBJECTDIR}/CMPWTimer.o: CMPWTimer.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CMPWTimer.o CMPWTimer.cpp
+
+${OBJECTDIR}/CMPWTimerHandle.o: CMPWTimerHandle.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CMPWTimerHandle.o CMPWTimerHandle.cpp
 
 ${OBJECTDIR}/CMPWUtils.o: CMPWUtils.cpp 
 	${MKDIR} -p ${OBJECTDIR}

@@ -10,9 +10,11 @@
 #include <vector>
 #include "CMPWEventHandle.h"
 #include "CMPWPacket.h"
+#include "TestbedOption.h"
+
 class CMPWSocketIOHandle : public CMPWEventHandle {
 public:
-    CMPWSocketIOHandle(Handle fd, std::vector<int> *fdList);
+    CMPWSocketIOHandle(Handle fd, TestbedOption* tb);
     virtual ~CMPWSocketIOHandle();
     
     virtual Handle getHandle() const;
@@ -21,10 +23,10 @@ public:
     
 private:
     Handle m_socketFd;
-    std::vector<int> *m_fdList;
+    TestbedOption* m_tb;
     PACKET* m_packet;
-    static const int MAX_SIZE = 1024;
+    static const int MAX_SIZE = 1024; 
+    void printNodeCmd(char src, char des, char cmd);
 };
-
 #endif	/* CMPWSOCKETIOHANDLE_H */
 

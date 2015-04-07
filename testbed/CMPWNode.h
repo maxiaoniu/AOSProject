@@ -12,6 +12,7 @@
 #include <vector>
 
 #include "CMPWEventHandle.h"
+#include "TestbedOption.h"
 class CMPWNode {
 public:
     CMPWNode();
@@ -20,9 +21,10 @@ public:
     unsigned int clientIpAddr;
     std::string clientHostName;
     char nodeID;
-    std::vector<int> *clientFdList;
+    TestbedOption *tb;
 private:
     int m_clientFd;
+    
     //CMPWEventHandle *m_ioHandle;
     
 };

@@ -1,21 +1,1028 @@
 start
 Open the two files successful
 We have 16 nodes: 
-1--net01.utdallas.edu
-2--net02.utdallas.edu
-3--net03.utdallas.edu
-4--net04.utdallas.edu
-5--net05.utdallas.edu
-6--net06.utdallas.edu
-7--net07.utdallas.edu
-8--net08.utdallas.edu
-9--net09.utdallas.edu 
-10--net10.utdallas.edu
-11--net11.utdallas.edu
-12--net12.utdallas.edu
-13--net13.utdallas.edu
-14--net14.utdallas.edu
-15--net15.utdallas.edu
-16--net16.utdallas.edu
-
-We have 2 test scases.
+node1 node2 node3 node4 node5 node6 node7 node8 node9 node10 node11 node12 node13 node14 node15 node16 
+We have 5 test scases.
+Node 10 is online!
+The address is 10.176.67.73:25057
+Node 14 is online!
+The address is 10.176.67.77:10396
+Node 4 is online!
+The address is 10.176.67.67:25296
+Node 15 is online!
+The address is 10.176.67.78:44972
+Node 9 is online!
+The address is 10.176.67.72:40631
+Node 8 is online!
+The address is 10.176.67.71:4229
+Node 3 is online!
+The address is 10.176.67.66:35742
+Node 12 is online!
+The address is 10.176.67.75:54446
+Node 1 is online!
+The address is 10.176.67.64:2177
+Node 5 is online!
+The address is 10.176.67.68:38035
+Node 11 is online!
+The address is 10.176.67.74:59073
+Node 13 is online!
+The address is 10.176.67.76:39818
+Node 6 is online!
+The address is 10.176.67.69:45774
+Node 2 is online!
+The address is 10.176.67.65:15779
+Node 7 is online!
+The address is 10.176.67.70:3518
+Node 16 is online!
+The address is 10.176.67.79:10923
+[32m[49m 1[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m13[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m10[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m14[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m13[39m[49m-->[32m[49m14[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m10[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m11[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m13[39m[49m-->[32m[49m15[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m12[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m13[39m[49m-->[32m[49m16[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m13[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m14[39m[49m-->[32m[49m13[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m10[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m13[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m13[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m13[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m12[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m16[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m14[39m[49m-->[32m[49m15[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m12[39m[49m-->[32m[49m10[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m11[39m[49m-->[32m[49m10[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m16[39m[49m-->[32m[49m14[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m10[39m[49m-->[32m[49m11[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m14[39m[49m-->[32m[49m16[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m10[39m[49m-->[32m[49m12[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m15[39m[49m-->[32m[49m14[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m10[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m14[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m10[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m15[39m[49m-->[32m[49m16[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m12[39m[49m-->[32m[49m11[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m11[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m14[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m14[39m[49m-->[32m[49m10[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m12[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m10[39m[49m-->[32m[49m14[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m15[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m12[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m16[39m[49m-->[32m[49m15[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m15[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m16[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m15[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m12[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m16[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m15[39m[49m-->[32m[49m11[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m12[39m[49m-->[32m[49m16[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m16[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m16[39m[49m-->[32m[49m12[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m11[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m15[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m11[39m[49m-->[32m[49m12[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m11[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m11[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m11[39m[49m-->[32m[49m15[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+node1 are asked enter critical section
+[32m[49m 1[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node2 are asked enter critical section
+[32m[49m 2[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node3 are asked enter critical section
+[32m[49m 3[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node4 are asked enter critical section
+[32m[49m 4[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node5 are asked enter critical section
+[32m[49m 5[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node6 are asked enter critical section
+[32m[49m 6[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node7 are asked enter critical section
+[32m[49m 7[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node8 are asked enter critical section
+[32m[49m 8[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node9 are asked enter critical section
+[32m[49m 9[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node10 are asked enter critical section
+[32m[49m10[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m10[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m10[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m10[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node11 are asked enter critical section
+[32m[49m11[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m10[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m10[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m11[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m11[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m11[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node12 are asked enter critical section
+[32m[49m12[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m11[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m11[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m12[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m12[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m12[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node13 are asked enter critical section
+[32m[49m13[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m12[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m12[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m13[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m13[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m13[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node14 are asked enter critical section
+[32m[49m14[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m13[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m13[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m14[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m14[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m14[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node15 are asked enter critical section
+[32m[49m15[39m[49m-->[32m[49m13[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m13[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m14[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m14[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m13[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m13[39m[49m-->[32m[49m15[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m15[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m15[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node16 are asked enter critical section
+[32m[49m16[39m[49m-->[32m[49m13[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m13[39m[49m-->[32m[49m15[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m15[39m[49m-->[32m[49m13[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m13[39m[49m-->[32m[49m16[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m16[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m16[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+Testcase 1 is over.
+node 1: 0.52 ms
+node 2: 1.27 ms
+node 3: 2.16 ms
+node 4: 1.92 ms
+node 5: 2.06 ms
+node 6: 2.95 ms
+node 7: 4.11 ms
+node 8: 2.30 ms
+node 9: 2.80 ms
+node10: 2.41 ms
+node11: 4.40 ms
+node12: 2.60 ms
+node13: 2.57 ms
+node14: 2.23 ms
+node15: 2.98 ms
+node16: 2.04 ms
+[32m[49m 1[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m13[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m13[39m[49m-->[32m[49m14[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m10[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m13[39m[49m-->[32m[49m15[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m11[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m13[39m[49m-->[32m[49m16[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m12[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m10[39m[49m-->[32m[49m11[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m14[39m[49m-->[32m[49m15[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m13[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m13[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m13[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m13[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m10[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m12[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m11[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m14[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m16[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m15[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m10[39m[49m-->[32m[49m12[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m15[39m[49m-->[32m[49m14[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m14[39m[49m-->[32m[49m16[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m10[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m14[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m12[39m[49m-->[32m[49m10[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m10[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m14[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m10[39m[49m-->[32m[49m14[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m14[39m[49m-->[32m[49m10[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m16[39m[49m-->[32m[49m14[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m10[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m14[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m11[39m[49m-->[32m[49m10[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m15[39m[49m-->[32m[49m16[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m15[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m15[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m15[39m[49m-->[32m[49m11[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m12[39m[49m-->[32m[49m11[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m16[39m[49m-->[32m[49m15[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m12[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m11[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m12[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m16[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m16[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m15[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m12[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m16[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m12[39m[49m-->[32m[49m16[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m16[39m[49m-->[32m[49m12[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m11[39m[49m-->[32m[49m12[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m11[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m11[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m11[39m[49m-->[32m[49m15[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+node1 node2 node3 node4 are asked enter critical section
+[32m[49m 1[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node5 node6 node7 node8 are asked enter critical section
+[32m[49m 5[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node9 node10 node11 node12 are asked enter critical section
+[32m[49m 9[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m10[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m12[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m11[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m10[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m10[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m10[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m10[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m10[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m12[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m12[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m12[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m12[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m12[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m11[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m11[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m11[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node13 node14 node15 node16 are asked enter critical section
+[32m[49m15[39m[49m-->[32m[49m13[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m14[39m[49m-->[32m[49m13[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m13[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m16[39m[49m-->[32m[49m13[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m11[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m11[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m13[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m13[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m13[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m13[39m[49m-->[32m[49m15[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m13[39m[49m-->[32m[49m15[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m15[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m15[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m15[39m[49m-->[32m[49m13[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m13[39m[49m-->[32m[49m14[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m13[39m[49m-->[32m[49m14[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m14[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m14[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m14[39m[49m-->[32m[49m13[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m13[39m[49m-->[32m[49m16[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m16[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m16[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+Testcase 2 is over.
+node 1: 0.44 ms
+node 2: 122.80 ms
+node 3: 81.75 ms
+node 4: 41.06 ms
+node 5: 40.94 ms
+node 6: 163.06 ms
+node 7: 121.47 ms
+node 8: 80.94 ms
+node 9: 40.51 ms
+node10: 81.01 ms
+node11: 162.81 ms
+node12: 121.58 ms
+node13: 40.56 ms
+node14: 121.28 ms
+node15: 80.97 ms
+node16: 162.49 ms
+[32m[49m 1[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m13[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m10[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m14[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m10[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m13[39m[49m-->[32m[49m14[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m11[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m15[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m10[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m14[39m[49m-->[32m[49m13[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m11[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m12[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m13[39m[49m-->[32m[49m15[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m11[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m12[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m13[39m[49m-->[32m[49m16[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m15[39m[49m-->[32m[49m13[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m10[39m[49m-->[32m[49m11[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m16[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m13[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m13[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m10[39m[49m-->[32m[49m12[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m14[39m[49m-->[32m[49m15[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m13[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m13[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m10[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m14[39m[49m-->[32m[49m16[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m10[39m[49m-->[32m[49m14[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m14[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m15[39m[49m-->[32m[49m14[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m14[39m[49m-->[32m[49m10[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m15[39m[49m-->[32m[49m16[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m15[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m15[39m[49m-->[32m[49m11[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m10[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m14[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m11[39m[49m-->[32m[49m10[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m12[39m[49m-->[32m[49m10[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m11[39m[49m-->[32m[49m12[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m11[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m11[39m[49m-->[32m[49m15[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m12[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m16[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m16[39m[49m-->[32m[49m14[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m12[39m[49m-->[32m[49m11[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m16[39m[49m-->[32m[49m15[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m12[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m16[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m12[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m16[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m12[39m[49m-->[32m[49m16[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m16[39m[49m-->[32m[49m12[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m11[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m15[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+node13 node14 node15 node16 are asked enter critical section
+[32m[49m13[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m15[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m14[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m16[39m[49m-->[32m[49m13[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m13[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m13[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m13[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m13[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m13[39m[49m-->[32m[49m16[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m13[39m[49m-->[32m[49m16[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m16[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m16[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m16[39m[49m-->[32m[49m13[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m13[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m14[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m14[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m14[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m14[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m14[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m15[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m15[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m15[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node9 node10 node11 node12 are asked enter critical section
+[32m[49m10[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m11[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m12[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m15[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m15[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m11[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m11[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m11[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m11[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m11[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m10[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m10[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m10[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m10[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m10[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m12[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m12[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m12[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node5 node6 node7 node8 are asked enter critical section
+[32m[49m 8[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m12[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m12[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node1 node2 node3 node4 are asked enter critical section
+[32m[49m 3[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+Testcase 3 is over.
+node 1: 121.12 ms
+node 2: 81.04 ms
+node 3: 40.81 ms
+node 4: 161.17 ms
+node 5: 41.68 ms
+node 6: 125.22 ms
+node 7: 166.70 ms
+node 8: 83.62 ms
+node 9: 123.98 ms
+node10: 83.19 ms
+node11: 41.89 ms
+node12: 164.22 ms
+node13: 40.53 ms
+node14: 123.19 ms
+node15: 164.04 ms
+node16: 81.11 ms
+[32m[49m 1[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m13[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m10[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m13[39m[49m-->[32m[49m14[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m10[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m14[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m11[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m12[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m13[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m13[39m[49m-->[32m[49m15[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m13[39m[49m-->[32m[49m16[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m13[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m13[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m10[39m[49m-->[32m[49m11[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m14[39m[49m-->[32m[49m15[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m11[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m12[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m11[39m[49m-->[32m[49m10[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m15[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m13[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m16[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m15[39m[49m-->[32m[49m14[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m10[39m[49m-->[32m[49m12[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m12[39m[49m-->[32m[49m10[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m14[39m[49m-->[32m[49m16[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m16[39m[49m-->[32m[49m14[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m10[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m14[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m10[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m14[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m10[39m[49m-->[32m[49m14[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m14[39m[49m-->[32m[49m10[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m10[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m14[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m15[39m[49m-->[32m[49m16[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m12[39m[49m-->[32m[49m11[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m11[39m[49m-->[32m[49m12[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m15[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m12[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m11[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m16[39m[49m-->[32m[49m15[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m15[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m12[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m11[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m16[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m15[39m[49m-->[32m[49m11[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m12[39m[49m-->[32m[49m16[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m11[39m[49m-->[32m[49m15[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m12[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m16[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m16[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m16[39m[49m-->[32m[49m12[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m11[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m15[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+node1 node2 node3 node4 node5 node6 node7 node8 node9 node10 node11 node12 node13 node14 node15 node16 are asked enter critical section
+[32m[49m 8[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m14[39m[49m-->[32m[49m13[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m13[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m15[39m[49m-->[32m[49m13[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m10[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m16[39m[49m-->[32m[49m13[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m11[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m12[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m13[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m13[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m13[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m13[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m13[39m[49m-->[32m[49m14[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m13[39m[49m-->[32m[49m14[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m14[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m14[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m14[39m[49m-->[32m[49m13[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m13[39m[49m-->[32m[49m15[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m13[39m[49m-->[32m[49m15[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m15[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m15[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m15[39m[49m-->[32m[49m13[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m13[39m[49m-->[32m[49m16[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m13[39m[49m-->[32m[49m16[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m16[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m16[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m16[39m[49m-->[32m[49m13[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m13[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m10[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m10[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m10[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m10[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m10[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m11[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m11[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m11[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m11[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m11[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m12[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m12[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m12[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m12[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m12[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+Testcase 4 is over.
+node 1: 0.75 ms
+node 2: 455.28 ms
+node 3: 1.62 ms
+node 4: 42.32 ms
+node 5: 331.97 ms
+node 6: 456.20 ms
+node 7: 413.69 ms
+node 8: 372.21 ms
+node 9: 207.85 ms
+node10: 208.43 ms
+node11: 249.48 ms
+node12: 290.69 ms
+node13: 83.51 ms
+node14: 84.13 ms
+node15: 125.14 ms
+node16: 166.47 ms
+[32m[49m 1[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m13[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m10[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m14[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m10[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m13[39m[49m-->[32m[49m14[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m12[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m16[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m10[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m11[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m15[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m11[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m14[39m[49m-->[32m[49m13[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m13[39m[49m-->[32m[49m15[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m12[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m13[39m[49m-->[32m[49m16[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m10[39m[49m-->[32m[49m11[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m12[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m16[39m[49m-->[32m[49m13[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m13[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m10[39m[49m-->[32m[49m12[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m13[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m13[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m13[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m10[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m10[39m[49m-->[32m[49m14[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m15[39m[49m-->[32m[49m13[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m14[39m[49m-->[32m[49m15[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m14[39m[49m-->[32m[49m16[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m14[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m12[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m10[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m12[39m[49m-->[32m[49m10[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m16[39m[49m-->[32m[49m14[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m14[39m[49m-->[32m[49m10[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m16[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m14[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m12[39m[49m-->[32m[49m11[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m16[39m[49m-->[32m[49m15[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m12[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m16[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m12[39m[49m-->[32m[49m16[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m16[39m[49m-->[32m[49m12[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m15[39m[49m-->[32m[49m14[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m15[39m[49m-->[32m[49m16[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m15[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m15[39m[49m-->[32m[49m11[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m11[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m11[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m 7[39m[49m-->[32m[49m15[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m11[39m[49m-->[32m[49m10[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m11[39m[49m-->[32m[49m12[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m11[39m[49m-->[32m[49m 7[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+[32m[49m11[39m[49m-->[32m[49m15[39m[49m  [34m[49m[INITIALIZATON][39m[49m
+node16 are asked enter critical section
+[32m[49m16[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m16[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m16[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m16[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node1 are asked enter critical section
+[32m[49m 1[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m16[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m16[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node12 are asked enter critical section
+[32m[49m12[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m12[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m12[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m12[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node5 are asked enter critical section
+[32m[49m 5[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m12[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m12[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node4 are asked enter critical section
+[32m[49m 4[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 5[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 5[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node13 are asked enter critical section
+[32m[49m13[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m13[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m13[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m13[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node8 are asked enter critical section
+[32m[49m 8[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m13[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m13[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node2 are asked enter critical section
+[32m[49m 2[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 8[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 8[39m[49m-->[32m[49m 4[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 4[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node11 are asked enter critical section
+[32m[49m11[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m11[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m11[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m11[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node6 are asked enter critical section
+[32m[49m 6[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m11[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m11[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node15 are asked enter critical section
+[32m[49m15[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 6[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 6[39m[49m-->[32m[49m 2[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 2[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m15[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m15[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m15[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node9 are asked enter critical section
+[32m[49m 9[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m15[39m[49m  [34m[49m[REQUEST][39m[49m
+[32m[49m15[39m[49m-->[32m[49m 3[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 3[39m[49m-->[32m[49m 1[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 1[39m[49m-->[32m[49m 9[39m[49m  [34m[49m[TOKEN][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE ENTERED][39m[49m
+[32m[49m 9[39m[49m-->[32m[49m 0[39m[49m  [31m[49m[HAVE EXITED][39m[49m
+node3 are asked enter critical section

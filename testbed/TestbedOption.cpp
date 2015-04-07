@@ -13,7 +13,7 @@
 #include<arpa/inet.h>
 typedef INI<std::string, std::string, std::string> ini_t;
 
-TestbedOption::TestbedOption(const std::string &sysParaFileName,const std::string &tbParaFileName) {
+TestbedOption::TestbedOption(const std::string &sysParaFileName,const std::string &tbParaFileName):m_currentTC(0),m_msgCount(0) {
     
     m_sysParaFileName = sysParaFileName;
     m_tbParaFileName = tbParaFileName;        
@@ -56,11 +56,36 @@ bool TestbedOption::parseTestbedPara() {
     ini.select("system");
     m_nodesNumber = Converters::Convert<int>(ini.get("number","-1"));    
     m_nodeIDList = splitString(ini.get("nodes","-1"),",");
+    //devide quorum
+    devide_quorum(m_nodesNumber);
     ini.select("test");
     m_timer = Converters::Convert<int>(ini.get("timer","-1"));  
     m_testcasesCount = Converters::Convert<int>(ini.get("testcase_number","-1"));   
     m_testMode = Converters::Convert<int>(ini.get("algorithm_selection","-1"));   
-    m_tokenHolder = Converters::Convert<int>(ini.get("Token_holder","-1"));   
+    m_tokenHolder = Converters::Convert<int>(ini.get("Token_holder","-1")); 
+    // parse testcase
+    for(int i=0; i < m_testcasesCount; i++)
+    {
+        std::stringstream str;
+        int timerCount;
+        TestCase tc;
+        str << "testcase"<<(i+1);
+        ini.select(str.str());
+        timerCount = Converters::Convert<int>(ini.get("timer_number","-1"));
+        for(int j=0; j < timerCount; j++)
+        {
+            
+            str.str("");
+            str << "t"<<(j+1);
+            tc.timerNode.insert(std::pair<int, std::vector<int> >(j,splitString(ini.get(str.str(),"-1"),",")));
+            
+        }
+        tc.finish = 0;
+        tc.startTime.resize(m_nodesNumber);
+        tc.endTime.resize(m_nodesNumber);
+        m_testcases.push_back(tc);       
+    }
+    
     return true;
 }
 
@@ -136,4 +161,48 @@ uint32_t TestbedOption::getIPfromHost(const std::string &host) {
 
         std::cerr<<"getHostByName Error";
         return uint32_t(-1);
+}
+
+TestCase *TestbedOption::getCurrentTestCase(){
+    
+     return &m_testcases[m_currentTC];
+}
+
+void TestbedOption::devide_quorum(int n) {
+    int k = 1;
+    while ((k * k) < n)
+        k++;
+    char matrix[k][k];
+    char node = 1;
+
+    for (int i = 0; i < k; i++) {
+        for (int j = 0; j < k; j++) {
+            if (node <= n) {
+                matrix[i][j] = node;
+                node++;
+            } else
+                matrix[i][j] = -1;
+        }
+    }
+    //devide the quorums
+    for (int row = 0; row < k; row++) {
+        for (int col = 0; col < k; col++) {
+            Quorum q;
+            //add the row element
+            for (int idx = 0; idx < k; idx++) {
+                if (matrix[row][idx] != -1)
+                    q.push_back(matrix[row][idx]);
+            }
+            //add the column element
+            for (int idx = 0; idx < k; idx++) {
+                if (idx == row)
+                    continue;
+                else {
+                    if (matrix[idx][col] != -1)
+                        q.push_back(matrix[idx][col]);
+                }
+            }
+            quorumList.push_back(q);
+        }
+    }
 }

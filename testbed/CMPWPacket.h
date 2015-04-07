@@ -11,7 +11,7 @@ struct packet{
     char src;
     char destination;
     char cmd;
-    char quorom[16];
+    char quorum[16];
    
 };
 typedef packet PACKET;

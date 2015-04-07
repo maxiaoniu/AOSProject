@@ -18,60 +18,83 @@
 #include "CMPWUtils.h"
 #include "CMPWNode.h"
 #include "CMPWPacket.h"
+#include "CMPWTimer.h"
+#include "CMPWCommand.h"
 using namespace std;
 
 /*
  * 
  */
 int main(int argc, char** argv) {
-  
+
     cout << "start" << endl;
-  
-    TestbedOption tb("system.ini","testbed.ini");
+
+    TestbedOption tb("system.ini", "testbed.ini");
     tb.parse();
     tb.printConfiguration();
     CMPWSocket serverTB;
-    
-    if(-1 == serverTB.tcpServer(2222)) {
+
+    if (-1 == serverTB.tcpServer(2222)) {
         return 0;
     }
     int n;
 
     n = tb.m_nodesNumber;
-    vector<CMPWNode> nodeList(n+1);
-    vector<int> clientFdList(n+1);
+    vector<CMPWNode> nodeList(n + 1);
+    vector<int> clientFdList(n + 1);
     while (n > 0) {
         struct sockaddr_in sin;
-	socklen_t len = sizeof(struct sockaddr_in);
+        socklen_t len = sizeof (struct sockaddr_in);
         uint32_t ip;
         int index;
         int clientFd;
-        clientFd = serverTB.socketAccept((struct sockaddr *)&sin, &len);
+        clientFd = serverTB.socketAccept((struct sockaddr *) &sin, &len);
+        CMPWUtils::setnonblocking(clientFd);
         ip = sin.sin_addr.s_addr;
         index = (tb.m_IPmapNodeID).find(ip)->second;
         nodeList[index] = CMPWNode();
-        nodeList[index].nodeID = (char)index;
+        nodeList[index].nodeID = (char) index;
         nodeList[index].clientIpAddr = ip;
         clientFdList[index] = clientFd;
-        nodeList[index].clientFdList = &clientFdList;
+        nodeList[index].tb = &tb;
         nodeList[index].init(clientFd);
         //set a index to node
-        
-        std::cout << "Node "<< index <<" is online!"<< std::endl;
+
+        std::cout << "Node " << index << " is online!" << std::endl;
         std::cout << "The address is " << CMPWUtils::getIpAndPort((struct sockaddr *) &sin) << std::endl;
         n--;
     }
-    CMPWReactor &reactor = CMPWReactor::getInstance();
-    //CMPWEventHandle* handler = new CMPWListenHandle(serverTB.m_listen_fd);
-    //reactor.regEvent(handler, ACCEPT_EVENT);
+    tb.clientFdList = &clientFdList;
+    PACKET *packet = new PACKET;
+    bzero(packet, sizeof (PACKET));
 
-    while( true )
-    {
-        reactor.eventLoop(-1); 
+    for (int i = 1; i < 17; i++) {
+        packet->cmd = CMD_QUORUM;
+        packet->src = 0;
+        packet->destination = i;
+        std::copy(tb.quorumList[i-1].begin(),tb.quorumList[i-1].end(),packet->quorum);
+        write(clientFdList[i], packet, sizeof (PACKET));
     }
+    
+    packet->destination = tb.m_tokenHolder;
+    packet->cmd = CMD_HOLDER;
+    write(clientFdList[tb.m_tokenHolder], packet, sizeof (PACKET));
+    for (int i = 1; i < 17; i++) {
+        packet->cmd = CMD_START;
+        packet->destination = i;
+        write(clientFdList[i], packet, sizeof (PACKET));
+    }
+    delete packet;
 
-    
-    
+    CMPWReactor &reactor = CMPWReactor::getInstance();
+    CMPWTimer timer(tb.m_timer,1000);
+
+    timer.setTestBed(&tb);
+    timer.start();
+
+    while (true) {
+        reactor.eventLoop(-1);
+    }
     return 0;
 }
 

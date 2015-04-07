@@ -39,7 +39,7 @@
     </conf>
     <conf name="Release" type="1">
       <toolsSet>
-        <developmentServer>yxm141630@cs1.utdallas.edu:22</developmentServer>
+        <developmentServer>localhost</developmentServer>
         <platform>2</platform>
       </toolsSet>
       <dbx_gdbdebugger version="1">

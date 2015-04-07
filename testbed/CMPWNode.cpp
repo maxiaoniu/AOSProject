@@ -3,14 +3,15 @@
  * Author: mayue
  * 
  * Created on April 1, 2015, 9:49 PM
- */
-
+ *
+*/
+#include <sys/socket.h>
+#include <string.h>
 #include "CMPWNode.h"
 #include "CMPWReactor.h"
 #include "CMPWPacket.h"
 #include "CMPWSocketIOHandle.h"
-#include <sys/socket.h>
-#include <string.h>
+
 CMPWNode::CMPWNode() {
     nodeID = 0;
 }
@@ -29,7 +30,7 @@ void CMPWNode::init(int fd) {
     write(fd, packet, sizeof (PACKET));
     delete packet;
     //register handle to reactor
-    CMPWEventHandle *h = new CMPWSocketIOHandle(fd, clientFdList );
+    CMPWEventHandle *h = new CMPWSocketIOHandle(fd, tb);
     CMPWReactor& r = CMPWReactor::getInstance();
     r.regEvent(h, READ_EVENT);
 }

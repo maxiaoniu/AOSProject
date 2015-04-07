@@ -31,7 +31,7 @@ int CMPWSocket::tcpServer(int port) {
     
     if((s = socketCreate(AF_INET)) == -1)
     {
-        std::cerr << "socket create error:" << strerror(errno) << std::endl;
+        std::cerr << "socket create error:" << strerror(errno) ;
         return -1;
     }
     memset(&sa, 0, sizeof(sa));
