@@ -24,6 +24,7 @@ private:
     TestbedOption* m_tb;
     int m_timerCount;
     int m_testcaseID;
+    int m_currentAlgo;
     TestCase *m_testcase;
     
     void printTestCaseResult(TestCase *tc);

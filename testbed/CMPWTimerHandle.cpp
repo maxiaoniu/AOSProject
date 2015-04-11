@@ -18,7 +18,7 @@
 #include <stdio.h>
 #include <stdint.h>     
 #include <iostream>
-CMPWTimerHandle::CMPWTimerHandle(int fd, TestbedOption* tb):m_timerFd(fd), m_tb(tb), m_timerCount(0),m_testcaseID(0){
+CMPWTimerHandle::CMPWTimerHandle(int fd, TestbedOption* tb):m_timerFd(fd), m_tb(tb), m_timerCount(0),m_testcaseID(0),m_currentAlgo(1){
     
 }
 
@@ -34,16 +34,46 @@ void CMPWTimerHandle::readHandle() {
         m_timerCount = 0;
         m_testcaseID = m_testcaseID + 1;
         m_tb->m_currentTC++;
+        m_testcase->finish = 0;
         std::cout<< "Testcase "<<m_testcaseID<<" is over."<<std::endl;
         printf("Amount message number: %d \n",m_tb->m_msgCount);
         m_tb->m_msgCount = 0;
         printTestCaseResult(m_testcase);  
-        for (int i = 1; i < 17; i++) {
+        for (int i = 1; i < m_tb->m_nodesNumber+1; i++) {
             send(0,i,CMD_END);
         }
-        send(0,m_tb->m_tokenHolder,CMD_HOLDER);
-        for (int i = 1; i < 17; i++) {
-            send(0,i,CMD_START);
+        if (m_testcaseID < m_tb->m_testcasesCount) {
+            send(0, m_tb->m_tokenHolder, CMD_HOLDER);
+            for (int i = 1; i < m_tb->m_nodesNumber + 1; i++) {
+                send(0, i, CMD_START);
+            }
+        }//have finish one algorithm
+        else {
+            if (m_tb->algoNumber == 2) {
+                if (m_currentAlgo == 1) {
+                    std::cout<< "Meakawa's Algorithm test"<<std::endl;
+                    m_tb->m_currentTC = 0;
+                    m_currentAlgo++;
+                    m_testcaseID = 0;
+                    for (int i = 1; i < m_tb->m_nodesNumber + 1; i++) {
+                        send(0, i, CMD_MEAKAWA);
+                        PACKET *packet = new PACKET;
+                        bzero(packet, sizeof (PACKET));
+                        packet->cmd = CMD_QUORUM;
+                        packet->src = 0;
+                        packet->destination = i;
+                        std::copy(m_tb->quorumList[i-1].begin(),m_tb->quorumList[i-1].end(),packet->quorum);
+                        write((m_tb->clientFdList)->at(i), packet, sizeof (PACKET));
+                        delete packet;
+                        send(0, i, CMD_START);
+                    }
+                } else {
+                    exit(1);
+                }
+            } else {
+                exit(1);
+            }
+
         }
         
     } else {
@@ -70,7 +100,7 @@ void CMPWTimerHandle::readHandle() {
         //printf("start time:%ld.%ld ", tc->startTime[i].tv_sec, tc->startTime[i].tv_usec);
         //printf("end time:%ld.%ld ", tc->endTime[i].tv_sec, tc->endTime[i].tv_usec);
         //printf("\r\n");
-        printf("node%2d: %.2f ms",i+1,((tc->endTime[i].tv_sec - tc->startTime[i].tv_sec)*1000000L+ tc->endTime[i].tv_usec - tc->startTime[i].tv_usec)/1000.0);
+        printf("node%2d: %6.2f ms",i+1,((tc->endTime[i].tv_sec - tc->startTime[i].tv_sec)*1000000L+ tc->endTime[i].tv_usec - tc->startTime[i].tv_usec)/1000.0);
         printf("\n");
     }
 

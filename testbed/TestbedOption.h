@@ -30,6 +30,7 @@ public:
     int m_timer;        //the period of test case
     int m_testcasesCount;
     int m_testMode;     //1: maekawa’s algorithm 2: our own algorithm 3: both
+    int algoNumber;
     int m_tokenHolder;
     std::vector<int> *clientFdList;
     std::vector<int> m_nodeIDList;

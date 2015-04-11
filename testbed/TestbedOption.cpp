@@ -30,7 +30,7 @@ bool TestbedOption::parse() {
 
 void TestbedOption::printConfiguration()
 {
-    std::cout << "Open the two files successful" << std::endl;
+    std::cout << "Open the configuration files successful" << std::endl;
     std::cout << "We have " << m_nodesNumber << " nodes: " << std::endl;
     for (std::vector<int>::iterator it = m_nodeIDList.begin() ; it != m_nodeIDList.end(); ++it)
     {
@@ -40,9 +40,18 @@ void TestbedOption::printConfiguration()
     std::cout << std::endl;
     
     std::cout << "We have " << m_testcasesCount <<" test scases." << std::endl;
-    
-    
-    
+    switch(m_testMode)
+    {
+        case 1:
+            std::cout<<"We will test maekawa’s algorithm."<< std::endl;
+            break;
+        case 2:
+            std::cout<<"We will test our own CMPW algorithm."<< std::endl;
+            break;
+        case 3:
+            std::cout<<"We will test maekawa’s algorithm and our CMPW algorithm."<< std::endl;
+            break;
+    }
 }
 
 bool TestbedOption::parseTestbedPara() {
@@ -61,7 +70,11 @@ bool TestbedOption::parseTestbedPara() {
     ini.select("test");
     m_timer = Converters::Convert<int>(ini.get("timer","-1"));  
     m_testcasesCount = Converters::Convert<int>(ini.get("testcase_number","-1"));   
-    m_testMode = Converters::Convert<int>(ini.get("algorithm_selection","-1"));   
+    m_testMode = Converters::Convert<int>(ini.get("algorithm_selection","-1")); 
+    if(m_testMode==3)
+        algoNumber=2;
+    else
+        algoNumber=1;
     m_tokenHolder = Converters::Convert<int>(ini.get("Token_holder","-1")); 
     // parse testcase
     for(int i=0; i < m_testcasesCount; i++)

@@ -7,17 +7,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Volumes/yxm141630/aos/project/AOSProject/testbed/main.cpp</file>
-            <file>file:/Volumes/yxm141630/aos/project/AOSProject/testbed/TestbedOption.cpp</file>
-            <file>file:/Volumes/yxm141630/aos/project/AOSProject/testbed/CMPWSocketIOHandle.cpp</file>
-            <file>file:/Volumes/yxm141630/aos/project/AOSProject/testbed/CMPWCommand.h</file>
-            <file>file:/Volumes/yxm141630/aos/project/AOSProject/testbed/CMPWUtils.cpp</file>
-            <file>file:/Volumes/yxm141630/aos/project/AOSProject/testbed/TestbedOption.h</file>
-            <file>file:/Volumes/yxm141630/aos/project/AOSProject/testbed/CMPWPacket.h</file>
-            <file>file:/Volumes/yxm141630/aos/project/AOSProject/testbed/CMPWTimerHandle.cpp</file>
-            <file>file:/Volumes/yxm141630/aos/project/AOSProject/testbed/system.ini</file>
-            <file>file:/Volumes/yxm141630/aos/project/AOSProject/testbed/testbed.ini</file>
-            <file>file:/Volumes/yxm141630/aos/project/AOSProject/testbed/CMPWSocket.cpp</file>
+            <file>rfs://yxm141630@cs1.utdallas.edu:22/home/004/y/yx/yxm141630/aos/project/AOSProject/testbed/CMPWTimerHandle.cpp</file>
+            <file>rfs://yxm141630@cs1.utdallas.edu:22/home/004/y/yx/yxm141630/aos/project/AOSProject/testbed/testbed.ini</file>
+            <file>rfs://yxm141630@cs1.utdallas.edu:22/home/004/y/yx/yxm141630/aos/project/AOSProject/testbed/main.cpp</file>
+            <file>rfs://yxm141630@cs1.utdallas.edu:22/home/004/y/yx/yxm141630/aos/project/AOSProject/testbed/TestbedOption.cpp</file>
+            <file>rfs://yxm141630@cs1.utdallas.edu:22/home/004/y/yx/yxm141630/aos/project/AOSProject/testbed/CMPWPacket.h</file>
+            <file>rfs://yxm141630@cs1.utdallas.edu:22/home/004/y/yx/yxm141630/aos/project/AOSProject/testbed/CMPWNode.cpp</file>
+            <file>rfs://yxm141630@cs1.utdallas.edu:22/home/004/y/yx/yxm141630/aos/project/AOSProject/testbed/TestbedOption.h</file>
         </group>
     </open-files>
 </project-private>

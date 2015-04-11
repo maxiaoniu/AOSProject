@@ -11,6 +11,7 @@ struct packet{
     char src;
     char destination;
     char cmd;
+    char seq;
     char quorum[16];
    
 };

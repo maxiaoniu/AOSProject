@@ -33,7 +33,8 @@ void CMPWSocketIOHandle::readHandle() {
     if (0 < read(m_socketFd, m_packet, sizeof (PACKET))) {
         //std::cout<<(int)m_packet->src<<"--->" <<(int)m_packet->destination<<std::endl;
         printNodeCmd(m_packet->src, m_packet->destination, m_packet->cmd);
-        //std::cout<< "The cmd is "<<(int)m_packet->cmd <<std::endl;
+        //std::cout << (int)m_packet->seq<<std::endl;
+        //std::cout << std::endl;
         //if cmd destination is other nodes
         if(m_packet->destination != 0)
         {
@@ -69,6 +70,7 @@ void CMPWSocketIOHandle::printNodeCmd(char src, char des, char cmd) {
     printf("-->");
     printf("\x1b[%dm\x1b[%dm%2d\x1b[39m\x1b[49m", 32, 49, des);
     printf("  ");
+    
 
     switch (cmd) {
         case CMD_ASK_ENTER:
@@ -101,6 +103,26 @@ void CMPWSocketIOHandle::printNodeCmd(char src, char des, char cmd) {
         case CMD_TOKEN:
             printf("\x1b[%dm\x1b[%dm%s\x1b[39m\x1b[49m", 34, 49, "[TOKEN]");
             break;
+        case CMD_MREQUEST:
+            printf("\x1b[%dm\x1b[%dm%s\x1b[39m\x1b[49m", 34, 49, "[MA_REQUEST]");
+            break;
+        case CMD_MFAIL:
+            printf("\x1b[%dm\x1b[%dm%s\x1b[39m\x1b[49m", 34, 49, "[MA_FAIL]");
+            break;
+        case CMD_MINQUIRE:
+            printf("\x1b[%dm\x1b[%dm%s\x1b[39m\x1b[49m", 34, 49, "[MA_INQUIRE]");
+            break;
+        case CMD_MLOCKED:
+            printf("\x1b[%dm\x1b[%dm%s\x1b[39m\x1b[49m", 34, 49, "[MA_LOCKED]");
+            break;
+        case CMD_MRELINQUISH:
+            printf("\x1b[%dm\x1b[%dm%s\x1b[39m\x1b[49m", 34, 49, "[MA_RELINQUISH]");
+            break; 
+        case CMD_MRELEASE:
+            printf("\x1b[%dm\x1b[%dm%s\x1b[39m\x1b[49m", 34, 49, "[MA_RELEASE]");
+            break;            
+        default:
+            printf("wrong cmd %d", cmd);
     }
     printf("\n");
 }

@@ -19,5 +19,16 @@
 #define CMD_END 8       //testbed
 #define CMD_ASK_ENTER 9 //testbed
 
+
+#define CMD_MREQUEST 	10
+#define CMD_MLOCKED	11
+#define CMD_MFAIL	12
+#define CMD_MINQUIRE	13
+#define CMD_MRELINQUISH	14
+#define CMD_MRELEASE	15
+
+#define CMD_MEAKAWA	16
+#define CMD_CMPW	17
+
 #endif	/* CMPWCOMMAND_H */
 

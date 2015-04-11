@@ -34,7 +34,7 @@ int main(int argc, char** argv) {
     tb.printConfiguration();
     CMPWSocket serverTB;
 
-    if (-1 == serverTB.tcpServer(2222)) {
+    if (-1 == serverTB.tcpServer(2223)) {
         return 0;
     }
     int n;
@@ -67,22 +67,31 @@ int main(int argc, char** argv) {
     tb.clientFdList = &clientFdList;
     PACKET *packet = new PACKET;
     bzero(packet, sizeof (PACKET));
-
-    for (int i = 1; i < 17; i++) {
+    for (int i = 1; i < tb.m_nodesNumber + 1; i++) {
+        bzero(packet, sizeof (PACKET));
+        if (tb.m_testMode == 1)
+            packet->cmd = CMD_MEAKAWA;
+        else
+            packet->cmd = CMD_CMPW;
+        packet->destination = i;
+        write(clientFdList[i], packet, sizeof (PACKET));     
+    }
+    for (int i = 1; i < tb.m_nodesNumber+1; i++) {
         packet->cmd = CMD_QUORUM;
         packet->src = 0;
         packet->destination = i;
         std::copy(tb.quorumList[i-1].begin(),tb.quorumList[i-1].end(),packet->quorum);
         write(clientFdList[i], packet, sizeof (PACKET));
     }
-    
+    bzero(packet, sizeof (PACKET));
     packet->destination = tb.m_tokenHolder;
     packet->cmd = CMD_HOLDER;
     write(clientFdList[tb.m_tokenHolder], packet, sizeof (PACKET));
-    for (int i = 1; i < 17; i++) {
+    for (int i = 1; i < tb.m_nodesNumber+1; i++) {     
+        bzero(packet, sizeof (PACKET));
         packet->cmd = CMD_START;
-        packet->destination = i;
-        write(clientFdList[i], packet, sizeof (PACKET));
+        packet->destination = i;        
+        write(clientFdList[i], packet, sizeof (PACKET));        
     }
     delete packet;
 
